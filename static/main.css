@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #222831;
+}
+
+main{
+    margin: 0;
+    padding: 0;
+}
+form{
+    margin: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 1.5px #393E46;
+    border-radius: 5px;
+}
+
+form label{
+    font-size: 24px;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    letter-spacing: 1.5px;
+}
+div{
+    margin: 20px 0;
+}
+textarea {
+    border: 2px solid #1089FF;
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    background-color: #222831;
+    color: white;
+    border-radius: 4px;
+    resize: none;
+}
+textarea:hover{
+    color: white;
+    box-shadow: 0 0 10px .5px #1089FF;
+
+}
+div input{
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #222831;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    border: 2px solid #1089FF;
+}
+
+div input:hover{
+    box-shadow: 0 0 10px .5px #1089FF;
+}
+div input:active{
+    background-color: #1089FF;
+    color: white;
+}
+
+.card{
+    color: white;
+    margin: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px 1.5px #393E46;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.card .sub-card{
+    padding: 10px 10px;
+    font-family: Tahoma, sans-serif;
+}
+
+.hoax{
+    border-left: 3px solid red;
+}
+.hoax h1{
+    color: red;
+}
+.fact{
+    border-left: 3px solid green;
+}
+.fact h1{
+    color: green;
+}

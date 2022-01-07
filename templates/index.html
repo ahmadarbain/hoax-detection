@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='./header.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='./main.css')}}">
+    <title>Hoax Detection</title>
+</head>
+<body>
+    <nav>
+        <h1>Hoax Detection</h1>
+        <p>Classification News Hoax Detection</p>
+    </nav>
+    <main>
+        <form action="" method="post">
+            <label for="input">Input your Text here</label>
+            <div class="input">
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="Input your text here....." required></textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+
+        <div class="card">
+            {% if my_prediction == "Hoax"%}
+            <div class="sub-card hoax">
+                <h1>{{my_prediction}}</h1>
+                <h2>{{prediction}}</h2>
+                <p>{{text}}</p>
+            </div>
+            {% else %}
+            <div class="sub-card fact">
+                <h1>{{my_prediction}}</h1>
+                <h2>{{prediction}}</h2>
+                <p>{{text}}</p>
+            </div>
+            {% endif %}
+        </div>
+    </main>
+</body>
+</html>
